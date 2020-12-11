@@ -1,2 +1,2 @@
 # angular-app
-bolierplate
+app
