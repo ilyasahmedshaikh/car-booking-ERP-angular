@@ -1,0 +1,21 @@
+@import '/src/styles.scss';
+
+.invoices {
+    .add {
+        a {
+            font-size: 30px;
+        }
+    }
+    .company {
+        h4 {
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+    .create {
+        float: right;
+    }
+}
