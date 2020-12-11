@@ -1,2 +1,20 @@
-<app-sidebar></app-sidebar>
-<router-outlet></router-outlet>
+<!-- <app-sidebar></app-sidebar> -->
+<!-- <router-outlet></router-outlet> -->
+
+<mat-toolbar color="primary">
+    <button mat-icon-button class="mr-2">
+     <mat-icon>menu</mat-icon>
+   </button>
+   <span>My App</span>
+   <span class="example-spacer"></span>
+ </mat-toolbar>
+ 
+<mat-sidenav-container>
+    <mat-sidenav mode="side" opened>
+        <app-sidebar></app-sidebar>
+    </mat-sidenav>
+    
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

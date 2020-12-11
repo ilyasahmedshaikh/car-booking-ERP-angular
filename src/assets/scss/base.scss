@@ -1,0 +1,12 @@
+mat-sidenav {
+    width: 200px;
+}
+
+mat-sidenav-container {
+    height: 100vh;
+}
+
+button:focus {
+    outline: none !important;
+    border: 0 !important;
+}
