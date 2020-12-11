@@ -1,2 +1,2 @@
-# angular-boilerplate-app
+# angular-app
 bolierplate
