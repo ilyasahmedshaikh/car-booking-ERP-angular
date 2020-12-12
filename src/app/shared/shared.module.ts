@@ -12,6 +12,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatSelectModule } from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [],
@@ -26,7 +31,12 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     MatButtonModule,
     MatCardModule,
     MatTableModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatTabsModule,
+    MatSelectModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
   ],
   exports: [
     FormsModule,
@@ -38,7 +48,12 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     MatButtonModule,
     MatCardModule,
     MatTableModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatTabsModule,
+    MatSelectModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
   ],
 })
 export class SharedModule {

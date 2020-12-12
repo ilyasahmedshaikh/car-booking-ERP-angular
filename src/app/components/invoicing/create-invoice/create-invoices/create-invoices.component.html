@@ -1,0 +1,87 @@
+<section class="create-invoices">
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-3">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Invoice #</mat-label>
+                    <input matInput placeholder="Enter Invoice#" value="133">
+                </mat-form-field>
+            </div>
+
+            <div class="col-3">
+                <mat-form-field>
+                    <mat-label>Choose a date</mat-label>
+                    <input matInput [matDatepicker]="picker">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+            </div>
+
+            <div class="col-3">
+                <mat-form-field>
+                    <mat-label>Currency</mat-label>
+                    <mat-select>
+                        <mat-option>None</mat-option>
+                        <mat-option value="usd">USD ($)</mat-option>
+                        <mat-option value="eur">EUR (€)</mat-option>
+                        <mat-option value="gbp">GBP	(£)</mat-option>
+                        <mat-option value="jpy">JPY	(¥)</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+            <div class="col-3">
+                <mat-form-field class="example-full-width">
+                    <mat-label>PO #</mat-label>
+                    <input matInput placeholder="Enter PO #" value="">
+                </mat-form-field>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-3">
+                <mat-form-field>
+                    <mat-label>Terms</mat-label>
+                    <mat-select>
+                        <mat-option>None</mat-option>
+                        <mat-option value="option1">Due Upon Receipt</mat-option>
+                        <mat-option value="option2">Receipt Undefined</mat-option>
+                        <mat-option value="option3">Receipt Empty</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+            <div class="col-3">
+                <mat-form-field>
+                    <mat-label>Allex</mat-label>
+                    <mat-select>
+                        <mat-option>None</mat-option>
+                        <mat-option value="option1">Allex 1</mat-option>
+                        <mat-option value="option2">Allex 2</mat-option>
+                        <mat-option value="option3">Allex 3</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+            <div class="col-3">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Bill To</mat-label>
+                    <p>Henry / house# 1700 W Blancke St, Linden, 7869</p>
+                    <input matInput placeholder="Enter Contact no." value="(+1) 8891-78650">
+                </mat-form-field>
+            </div>
+
+            <div class="col-3">
+                <mat-form-field>
+                    <mat-label>Billing Contact</mat-label>
+                    <mat-select>
+                        <mat-option>None</mat-option>
+                        <mat-option value="option1">Lauren, Jaffery</mat-option>
+                        <mat-option value="option2">Elina, Cybex</mat-option>
+                        <mat-option value="option3">Gian, Otex</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+    </div>
+</section>
