@@ -10,6 +10,8 @@ import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { MatTableModule } from '@angular/material/table';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [],
@@ -22,7 +24,9 @@ import { MatCardModule } from '@angular/material/card';
     MatIconModule,
     MatToolbarModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule,
+    MatCheckboxModule
   ],
   exports: [
     FormsModule,
@@ -32,7 +36,9 @@ import { MatCardModule } from '@angular/material/card';
     MatIconModule,
     MatToolbarModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule,
+    MatCheckboxModule
   ],
 })
 export class SharedModule {

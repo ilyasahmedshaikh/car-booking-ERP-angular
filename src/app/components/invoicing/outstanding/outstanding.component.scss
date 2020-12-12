@@ -1,0 +1,29 @@
+@import '/src/styles.scss';
+
+.outstanding {
+    // .table {
+    //     height: 78vh;
+    //     max-height: 69vh;
+    //     overflow-y: auto;
+    // }
+    td {
+        span {
+            &.icon {
+                font-size: 16px;
+            }
+            &.text {
+                position: relative;
+                bottom: 3px;
+                padding-left: 5px;
+            }
+        }
+    }
+}
+.mat-checkbox {
+    margin-top: 7px;
+    margin-right: 10px;
+}
+
+th.mat-header-cell:first-of-type, td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type {
+    padding-left: 15px;
+}
