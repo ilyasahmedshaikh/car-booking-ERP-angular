@@ -1,1 +1,39 @@
 @import '/src/styles.scss';
+
+.create-invoices {
+    .invoice-table {
+        height: 46vh;
+        max-height: 46vh;
+        overflow-y: auto;
+    }
+    .bottom-section {
+        .right-side {
+            span {
+                &.label {
+                    color:#000000;
+                    font-size: 15px;
+                    font-weight: 500;
+                    margin-right: 8px;
+                }
+                &.amount {
+                    color:#000000;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+.mat-checkbox {
+    margin-top: 7px;
+    margin-right: 10px;
+}
+
+th.mat-header-cell:first-of-type, td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type {
+    padding-left: 15px;
+}
+
+td {
+    width: 300px;
+}

@@ -29,13 +29,13 @@
             <!-- Billing Contact Column -->
             <ng-container matColumnDef="billing_contact">
               <th mat-header-cell *matHeaderCellDef>Billing Contact</th>
-              <td mat-cell *matCellDef="let element">{{element.billing_contact}}</td>
+              <td class="text-truncate" mat-cell *matCellDef="let element">{{element.billing_contact}}</td>
             </ng-container>
           
             <!-- Company Column -->
             <ng-container matColumnDef="company">
               <th mat-header-cell *matHeaderCellDef>Company</th>
-              <td mat-cell *matCellDef="let element">{{element.company}}</td>
+              <td class="text-truncate" mat-cell *matCellDef="let element">{{element.company}}</td>
             </ng-container>
           
             <!-- Bill Date Column -->
