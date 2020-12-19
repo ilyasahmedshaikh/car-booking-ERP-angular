@@ -40,7 +40,7 @@
             </div>
 
             <div class="row mt-2">
-                <div class="col-3">
+                <div class="col-4">
                     <mat-form-field class="example-full-width w-100">
                         <mat-label>Terms</mat-label>
                         <mat-select>
@@ -52,7 +52,7 @@
                     </mat-form-field>
                 </div>
 
-                <div class="col-3">
+                <div class="col-4">
                     <mat-form-field class="example-full-width  w-100">
                         <mat-label>Allex</mat-label>
                         <mat-select>
@@ -64,15 +64,7 @@
                     </mat-form-field>
                 </div>
 
-                <div class="col-3">
-                    <mat-form-field class="example-full-width w-100">
-                        <mat-label>Bill To</mat-label>
-                        <p>Henry / house# 1700 W Blancke St, Linden, 7869</p>
-                        <input matInput placeholder="Enter Contact no." value="(+1) 8891-78650">
-                    </mat-form-field>
-                </div>
-
-                <div class="col-3">
+                <div class="col-4">
                     <mat-form-field class="example-full-width w-100">
                         <mat-label>Billing Contact</mat-label>
                         <mat-select>
@@ -81,6 +73,22 @@
                             <mat-option value="option2">Elina, Cybex</mat-option>
                             <mat-option value="option3">Gian, Otex</mat-option>
                         </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="row mt-2">
+                <div class="col-2">
+                    <p class="pt-3 pb-0">Bill To</p>
+                </div>
+                <div class="col-5">
+                    <mat-form-field class="example-full-width w-100">
+                        <input matInput placeholder="Enter Address" value="Henry / house# 1700 W Blancke St, Linden, 7869">
+                    </mat-form-field>
+                </div>
+                <div class="col-5">
+                    <mat-form-field class="example-full-width w-100">
+                        <input matInput placeholder="Enter Contact no." value="+1 82 90903421">
                     </mat-form-field>
                 </div>
             </div>
@@ -143,86 +151,112 @@
 
             <mat-card class="mt-4 mat-elevation-z5">
                 <div class="row bottom-section">
-                    <div class="col-7 left-section">
-                        <div class="row">
-                            <div class="col-7">
-                                <mat-form-field class="w-100">
-                                    <mat-label>Customer Message</mat-label>
-                                    <mat-select>
-                                        <mat-option>None</mat-option>
-                                        <mat-option value="option1">Message 1</mat-option>
-                                        <mat-option value="option2">Message 2</mat-option>
-                                        <mat-option value="option3">Message 3</mat-option>
-                                    </mat-select>
-                                </mat-form-field>
-            
-                                <div class="description">
-                                    <mat-form-field class="example-full-width w-100">
-                                        <mat-label>Enter Description..</mat-label>
-                                        <textarea matInput placeholder="Description.."></textarea>
-                                    </mat-form-field>
-                                </div>
+                    <div class="col-6 left-section">
+                        <div class="message">
+                            <mat-form-field class="example-full-width w-100">
+                                <mat-label>Customer Message</mat-label>
+                                <mat-select>
+                                    <mat-option>None</mat-option>
+                                    <mat-option value="option1">Message 1</mat-option>
+                                    <mat-option value="option2">Message 2</mat-option>
+                                    <mat-option value="option3">Message 3</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+    
+                        <div class="description">
+                            <mat-form-field class="example-full-width w-100">
+                                <mat-label>Enter Description..</mat-label>
+                                <textarea matInput placeholder="Description.."></textarea>
+                            </mat-form-field>
+                        </div>
 
-                                <div class="btns">
-                                    <a class="my-3 w-100" mat-raised-button color="primary">
-                                        <mat-checkbox class="example-margin">Add To Message List</mat-checkbox>
-                                    </a>
+                        <div class="notes">
+                            <mat-form-field class="example-full-width w-100">
+                                <mat-label>Invoice Notes..</mat-label>
+                                <textarea matInput placeholder="Notes.."></textarea>
+                            </mat-form-field>
+                        </div>
 
-                                    <a class="w-100" mat-raised-button color="primary">Manage Cutomer Messages</a>
-                                </div>
+                        <div class="btns">
+                            <a class="my-3 w-100" mat-raised-button color="primary">
+                                <mat-checkbox class="example-margin">Add To Message List</mat-checkbox>
+                            </a>
 
-                            </div>
-                            
-                            <div class="col-5">
-                                <mat-form-field class="example-full-width w-100">
-                                    <mat-label>Invoice Notes..</mat-label>
-                                    <textarea matInput placeholder="Notes.."></textarea>
-                                </mat-form-field>
-                            </div>
+                            <a class="w-100" mat-raised-button color="primary">Manage Cutomer Messages</a>
                         </div>
                     </div>
                     
-                    <div class="col-5 right-section">
-                        <div class="row field total bg-info">
-                            <span class="label">Total:</span>
-                            <span class="amount">$0.00</span>
+                    <div class="col-6 right-section">
+                        <div class="row field total">
+                            <div class="col-6">
+                                <span class="label">Total:</span>
+                            </div>
+                            <div class="col-6">
+                                <span class="amount">$0.00</span>
+                            </div>
                         </div>
                         
                         <div class="row field mt-3">
-                            <span class="label text-danger font-weight-bold">Discount</span>
-                            <input class="text-danger font-weight-bold mr-2"type="text" value="0.00">
-                            <select class="text-danger font-weight-bold mr-1">
-                                <option value="option1">%</option>
-                                <option value="option2">%</option>
-                                <option value="option3">%</option>
-                            </select> =
-                            <span class="amount ml-2">$0.00</span>
+                            <div class="col-6">
+                                <span class="label text-danger font-weight-bold">Discount</span>
+                                <input class="text-danger font-weight-bold mr-2" type="text" value="0.00">
+                                <select class="text-danger font-weight-bold mr-1">
+                                    <option value="option1">%</option>
+                                    <option value="option2">%</option>
+                                    <option value="option3">%</option>
+                                </select> =
+                            </div>
+                            <div class="col-6">
+                                <span class="amount">$0.00</span>
+                            </div>
+                        </div>
+
+                        <div class="row field">
+                            <div class="col-6">
+                                <mat-form-field>
+                                    <mat-label>Finance Charge</mat-label>
+                                    <input matInput value="0.00">
+                                </mat-form-field>
+
+                                <mat-form-field>
+                                    <mat-select>
+                                      <mat-option value="option1">%</mat-option>
+                                      <mat-option value="option2">%</mat-option>
+                                      <mat-option value="option3">%</mat-option>
+                                    </mat-select>
+                                </mat-form-field> =
+                            </div>
+                            <div class="col-6">
+                                <span class="amount">$0.00</span>
+                            </div>
                         </div>
 
                         <div class="row field mt-3">
-                            <span class="label">Finance Charge</span>
-                            <input class="mr-2" type="text" value="0.00">
-                            <select class="mr-1">
-                                <option value="option1">%</option>
-                                <option value="option2">%</option>
-                                <option value="option3">%</option>
-                            </select> =
-                            <span class="amount ml-2">$0.00</span>
+                            <div class="col-6">
+                                <span class="label">Invoice Total:</span>
+                            </div>
+                            <div class="col-6">
+                                <span class="amount">$0.00</span>
+                            </div>
                         </div>
 
-                        <div class="row field bg-light mt-3">
-                            <span class="label">Invoice Total:</span>
-                            <span class="amount">$0.00</span>
+                        <div class="row payments mt-3 field">
+                            <div class="col-6">
+                                <span class="label">Payments:</span>
+                            </div>
+                            <div class="col-6">
+                                <span class="amount">$0.00</span>
+                            </div>
                         </div>
 
-                        <div class="row payments mt-3 field bg-success">
-                            <span class="label">Payments:</span>
-                            <span class="amount">$0.00</span>
-                        </div>
-
-                        <div class="row field dues bg-danger mt-3">
-                            <span class="label">Total Dues:</span>
-                            <span class="amount">$0.00</span>
+                        <div class="row field dues mt-3">
+                            <div class="col-6">
+                                <span class="label">Total Dues:</span>
+                            </div>
+                            <div class="col-6">
+                                <span class="amount">$0.00</span>
+                            </div>
                         </div>
                         
                         <div class="row mt-4 justify-content-center">
