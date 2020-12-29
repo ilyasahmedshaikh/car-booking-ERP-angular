@@ -18,6 +18,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatTreeModule } from '@angular/material/tree';
 
 @NgModule({
   declarations: [],
@@ -38,7 +39,8 @@ import { MatChipsModule } from '@angular/material/chips';
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatChipsModule
+    MatChipsModule,
+    MatTreeModule
   ],
   exports: [
     FormsModule,
@@ -56,7 +58,8 @@ import { MatChipsModule } from '@angular/material/chips';
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatChipsModule
+    MatChipsModule,
+    MatTreeModule
   ],
 })
 export class SharedModule {
