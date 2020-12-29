@@ -79,9 +79,13 @@
             <!-- btns Column -->
             <ng-container matColumnDef="actions">
                 <th mat-header-cell *matHeaderCellDef></th>
-                <td class="text-right" mat-cell *matCellDef="let element">
-                    <button class="py-0 px-3 mr-2" mat-raised-button color="primary">Finalize</button>
-                    <button class="py-0 px-3" mat-raised-button color="accent">Close</button>
+                <td class="actions text-right" mat-cell *matCellDef="let element">
+                    <button mat-icon-button class="mr-1" color="primary" aria-label="Example icon button with a done icon">
+                        <mat-icon>done</mat-icon>
+                    </button>
+                    <button mat-icon-button color="warn" aria-label="Example icon button with a clear icon">
+                        <mat-icon>clear</mat-icon>
+                    </button>
                 </td>
             </ng-container>
           

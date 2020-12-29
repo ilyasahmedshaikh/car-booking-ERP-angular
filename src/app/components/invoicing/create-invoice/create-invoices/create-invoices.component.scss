@@ -1,19 +1,9 @@
 @import '/src/styles.scss';
 
 .create-invoices {
-    .invoice-table {
-        height: 46vh;
-        max-height: 46vh;
-        overflow-y: auto;
-    }
     .bottom-section {
         .right-section {
-            .field  {
-                padding: 6px 0px;
-            }
-            p {
-                margin-bottom: 0px;
-            }
+            position: relative;
             span {
                 &.label {
                     color:#000000;
@@ -25,6 +15,18 @@
                     color:#000000;
                     font-size: 15px;
                     font-weight: 500;
+                }
+            }
+            .discount {
+                span {
+                    position: absolute;
+                    top: 15px;
+                }
+            }
+            .finance {
+                span {
+                    position: absolute;
+                    top: 15px;
                 }
             }
         }

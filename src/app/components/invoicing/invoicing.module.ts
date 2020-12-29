@@ -11,10 +11,11 @@ import { PaidComponent } from './paid/paid.component';
 import { SettingsComponent } from './settings/settings.component';
 import { CreateInvoiceComponent } from './create-invoice/create-invoice.component';
 import { CreateInvoicesComponent } from './create-invoice/create-invoices/create-invoices.component';
+import { SettingsTabComponent } from './settings/settings-tab/settings-tab.component';
 
 
 @NgModule({
-  declarations: [InvoicingComponent, InvoicesComponent, OutstandingComponent, PaidComponent, SettingsComponent, CreateInvoiceComponent, CreateInvoicesComponent],
+  declarations: [InvoicingComponent, InvoicesComponent, OutstandingComponent, PaidComponent, SettingsComponent, CreateInvoiceComponent, CreateInvoicesComponent, SettingsTabComponent],
   imports: [
     CommonModule,
     InvoicingRoutingModule,
