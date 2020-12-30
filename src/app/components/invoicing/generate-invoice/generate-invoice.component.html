@@ -1,0 +1,174 @@
+<section class="pdf-format-screen py-4">
+    <div class="container">
+        <div class="row top-section">
+            <div class="col-8 left-sec">
+                <div class="logo">
+                    <img src="../../../../assets/img/company-logo.png">
+                </div>
+                <div class="heading">
+                    <h1>Invoice</h1>
+                    <p>Invoice number : 202356</p>
+                </div>
+            </div>
+
+            <div class="col-4 right-sec">
+                <div class="info">
+                    <div class="row">
+                        <div class="col-2">
+                            <span class="material-icons">location_city</span>
+                        </div>
+                        <div class="col-10">
+                            <p>	
+                                Logon Corporation
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-2">
+                            <span class="material-icons">where_to_vote</span>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                Forrest Ray 19-1 Integer, New Mexico
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-2">
+                            <span class="material-icons">phone_in_talk</span>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                +1 82 90903421
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-2">
+                            <span class="material-icons">mail</span>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                logon.accounting@gmail.com
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-2">
+                            <span class="material-icons">language</span>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                www.logoncorporation.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row middel-section">
+            <div class="col-8 left-sec">
+                <h1>Bill to</h1>
+                <p>Customer Info</p>
+            </div>
+
+            <div class="col-4 right-sec">
+                <div class="invoice">
+                    <span>Invoice :</span>
+                    <span class="pl-2">202356</span>
+                </div>
+
+                <div class="terms pt-1">
+                    <span><strong>Terms :</strong></span>
+                    <span class="pl-2"><strong>Payment Terms</strong></span>
+                </div>
+
+                <div class="date pt-1">
+                    <span>Date :</span>
+                    <span class="pl-2">20-12-2018</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row table-section mx-0 mt-5">
+            <table mat-table [dataSource]="dataSource" class="mat-elevation-z1 w-100 table-striped">
+
+                <!-- Reservation Column -->
+                <ng-container matColumnDef="reservation">
+                    <th mat-header-cell *matHeaderCellDef>Reservation</th>
+                    <td mat-cell *matCellDef="let element">{{element.reservation}}</td>
+                </ng-container>
+            
+                <!-- PO/ Reference Column -->
+                <ng-container matColumnDef="po_reference">
+                <th mat-header-cell *matHeaderCellDef>PO/ Reference</th>
+                <td mat-cell *matCellDef="let element">{{element.po_reference}}</td>
+                </ng-container>
+            
+                <!-- Date Column -->
+                <ng-container matColumnDef="date">
+                <th mat-header-cell *matHeaderCellDef>Date</th>
+                <td mat-cell *matCellDef="let element">{{element.date}}</td>
+                </ng-container>
+            
+                <!-- Time Column -->
+                <ng-container matColumnDef="time">
+                <th mat-header-cell *matHeaderCellDef>Time</th>
+                <td mat-cell *matCellDef="let element">{{element.time}}</td>
+                </ng-container>
+    
+                <!-- Passenger Name Column -->
+                <ng-container matColumnDef="passenger_name">
+                    <th mat-header-cell *matHeaderCellDef>Passenger Name</th>
+                    <td mat-cell *matCellDef="let element">{{element.passenger_name}}</td>
+                </ng-container>
+    
+                <!-- Pickup Location + Destination Column -->
+                <ng-container matColumnDef="pickup_location_destination">
+                    <th mat-header-cell *matHeaderCellDef>Pickup Location + Destination</th>
+                    <td mat-cell *matCellDef="let element">{{element.pickup_location_destination}}</td>
+                </ng-container>
+
+                <!-- Vehicle Column -->
+                <ng-container matColumnDef="vehicle">
+                    <th mat-header-cell *matHeaderCellDef>Vehicle</th>
+                    <td mat-cell *matCellDef="let element">{{element.vehicle}}</td>
+                </ng-container>
+
+                <!-- Total Column -->
+                <ng-container matColumnDef="total">
+                    <th mat-header-cell *matHeaderCellDef>Total</th>
+                    <td mat-cell *matCellDef="let element">{{element.total}}</td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+        </div>
+
+        <div class="row pt-5 total-trips">
+            <div class="col-12">
+                <span>Total Trips:</span>
+                <span class="pl-3"># of total trips in the invoice</span>
+            </div>
+        </div>
+
+        <div class="row pt-2 text-right total-dues">
+            <div class="col-12">
+                <span class="text-danger pr-3"><strong>Total Amount Due:</strong></span>
+                <span><strong>$8502</strong></span>
+            </div>
+        </div>
+
+        <div class="row pt-5 message">
+            <div class="col-12">
+                <p>Message</p>
+            </div>
+        </div>
+    </div>
+</section>

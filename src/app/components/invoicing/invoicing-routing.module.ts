@@ -8,6 +8,7 @@ import { OutstandingComponent } from './outstanding/outstanding.component';
 import { PaidComponent } from './paid/paid.component';
 import { SettingsComponent } from './settings/settings.component';
 import { CreateInvoiceComponent } from './create-invoice/create-invoice.component';
+import { GenerateInvoiceComponent } from './generate-invoice/generate-invoice.component';
 
 const routes: Routes = [
   { 
@@ -20,6 +21,7 @@ const routes: Routes = [
       { path: 'paid', component: PaidComponent },
       { path: 'settings', component: SettingsComponent },
       { path: 'create-invoice', component: CreateInvoiceComponent },
+      { path: 'generate-invoice', component: GenerateInvoiceComponent },
     ]
   }
 ];

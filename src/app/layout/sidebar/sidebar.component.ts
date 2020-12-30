@@ -12,6 +12,7 @@ export class SidebarComponent implements OnInit {
     { icon: 'file_copy', name: 'outstanding', route: '/invoicing/outstanding' },
     { icon: 'file_copy', name: 'paid', route: '/invoicing/paid' },
     { icon: 'build', name: 'settings', route: '/invoicing/settings' },
+    { icon: 'picture_as_pdf', name: 'generate invoice', route: '/invoicing/generate-invoice' },
   ]
 
   constructor() { }
