@@ -9,10 +9,12 @@ export class SidebarComponent implements OnInit {
 
   items: any = [
     { icon: 'file_copy', name: 'invoices', route: '/invoicing/invoices' },
-    { icon: 'file_copy', name: 'outstanding', route: '/invoicing/outstanding' },
-    { icon: 'file_copy', name: 'paid', route: '/invoicing/paid' },
-    { icon: 'build', name: 'settings', route: '/invoicing/settings' },
+    { icon: 'post_add', name: 'add trips invoice', route: '/invoicing/add-trips-invoice' },
+    { icon: 'style', name: 'record Payment', route: '/invoicing/record-payment' },
+    { icon: 'content_paste', name: 'outstanding', route: '/invoicing/outstanding' },
+    { icon: 'local_atm', name: 'paid', route: '/invoicing/paid' },
     { icon: 'picture_as_pdf', name: 'generate invoice', route: '/invoicing/generate-invoice' },
+    { icon: 'build', name: 'settings', route: '/invoicing/settings' },
   ]
 
   constructor() { }
