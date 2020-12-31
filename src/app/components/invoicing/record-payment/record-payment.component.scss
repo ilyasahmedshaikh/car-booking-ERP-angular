@@ -1,0 +1,49 @@
+@import '/src/styles.scss';
+
+.record-payment-screen {
+    .record-section {
+        .middel-section {
+            padding-top: 5%;
+            .heading {
+                h2 {
+                    font-size: 21px;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+
+    .payment-section {
+        padding-top: 5%;
+        .heading {
+            h2 {
+                font-size: 21px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    .info-section {
+        .left-section {
+            h1 {
+                margin-bottom: 0px;
+                font-size: 20px;
+                font-weight: 500;
+            }
+            p {
+                margin-bottom: 0px;
+                padding-top: 10px;
+            }
+        }
+
+        .right-section {
+            p {
+                margin-bottom: 0px;
+                padding-top: 18px;
+                &.sub-text {
+                    padding-top: 3px;
+                }
+            }
+        }
+    }
+}
