@@ -8,11 +8,12 @@
                     <mat-tab label="Create Invoices">
                         <app-create-invoices></app-create-invoices>
                     </mat-tab>
-
-                    <mat-tab label="Receive Payments">Receive Payments</mat-tab>
-                    <mat-tab label="Invoices">Invoices</mat-tab>
-                    <mat-tab label="Closed Invoices">Closed Invoices</mat-tab>
-                    <mat-tab label="Pending Transactions">Pending Transactions</mat-tab>
+                    <mat-tab label="Outstanding Invoices">
+                        <app-outstanding-invoices></app-outstanding-invoices>
+                    </mat-tab>
+                    <mat-tab label="Paid Invoices">
+                        <app-paid-invoices></app-paid-invoices>
+                    </mat-tab>
                 </mat-tab-group>
             </div>
         </mat-card>

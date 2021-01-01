@@ -15,10 +15,12 @@ import { SettingsTabComponent } from './settings/settings-tab/settings-tab.compo
 import { GenerateInvoiceComponent } from './generate-invoice/generate-invoice.component';
 import { AddTripsInvoiceComponent } from './add-trips-invoice/add-trips-invoice.component';
 import { RecordPaymentComponent } from './record-payment/record-payment.component';
+import { OutstandingInvoicesComponent } from './create-invoice/outstanding-invoices/outstanding-invoices.component';
+import { PaidInvoicesComponent } from './create-invoice/paid-invoices/paid-invoices.component';
 
 
 @NgModule({
-  declarations: [InvoicingComponent, InvoicesComponent, OutstandingComponent, PaidComponent, SettingsComponent, CreateInvoiceComponent, CreateInvoicesComponent, SettingsTabComponent, GenerateInvoiceComponent, AddTripsInvoiceComponent, RecordPaymentComponent],
+  declarations: [InvoicingComponent, InvoicesComponent, OutstandingComponent, PaidComponent, SettingsComponent, CreateInvoiceComponent, CreateInvoicesComponent, SettingsTabComponent, GenerateInvoiceComponent, AddTripsInvoiceComponent, RecordPaymentComponent, OutstandingInvoicesComponent, PaidInvoicesComponent],
   imports: [
     CommonModule,
     InvoicingRoutingModule,
