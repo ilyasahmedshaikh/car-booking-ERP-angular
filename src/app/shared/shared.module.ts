@@ -19,9 +19,11 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatTreeModule } from '@angular/material/tree';
+import { MatDialogModule } from '@angular/material/dialog';
+import { InvoiceModalComponent } from './invoice-modal/invoice-modal.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [InvoiceModalComponent],
   imports: [
     CommonModule,
     FormsModule,
@@ -40,7 +42,8 @@ import { MatTreeModule } from '@angular/material/tree';
     MatDatepickerModule,
     MatNativeDateModule,
     MatChipsModule,
-    MatTreeModule
+    MatTreeModule,
+    MatDialogModule
   ],
   exports: [
     FormsModule,
@@ -59,7 +62,8 @@ import { MatTreeModule } from '@angular/material/tree';
     MatDatepickerModule,
     MatNativeDateModule,
     MatChipsModule,
-    MatTreeModule
+    MatTreeModule,
+    MatDialogModule
   ],
 })
 export class SharedModule {

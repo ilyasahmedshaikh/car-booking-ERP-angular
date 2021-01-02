@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { InvoiceModalComponent } from '../../../../shared/invoice-modal/invoice-modal.component';
+
 
 @Component({
   selector: 'app-create-invoices',
@@ -17,9 +20,18 @@ export class CreateInvoicesComponent implements OnInit {
   displayedColumns: string[] = ['checkbox', 'reservation', 'po_reference', 'date', 'time', 'passenger_name', 'pickup_location_destination', 'vehicle', 'total'];
   dataSource = this.ELEMENT_DATA;
 
-  constructor() { }
+  constructor(
+    private dialog: MatDialog
+  ) {}
 
   ngOnInit(): void {
   }
 
+  openDialog() {
+    const dialogRef = this.dialog.open(InvoiceModalComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
 }

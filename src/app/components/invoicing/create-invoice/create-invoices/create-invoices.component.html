@@ -44,7 +44,6 @@
                             <mat-option>None</mat-option>
                             <mat-option value="option1">Due Upon Receipt</mat-option>
                             <mat-option value="option2">Receipt Undefined</mat-option>
-                            <mat-option value="option3">Receipt Empty</mat-option>
                         </mat-select>
                     </mat-form-field>
                 </div>
@@ -163,6 +162,7 @@
                                 <mat-option value="option1">Message 1</mat-option>
                                 <mat-option value="option2">Message 2</mat-option>
                                 <mat-option value="option3">Message 3</mat-option>
+                                <mat-option value="option4">Message 4</mat-option>
                             </mat-select>
                         </mat-form-field>
                     </div>
@@ -279,7 +279,7 @@
                     </div>
                     
                     <div class="row mt-4 btns justify-content-center">
-                        <a mat-raised-button class="w-50" color="primary">Create Invoice</a>
+                        <a mat-raised-button class="w-50" color="primary" (click)="openDialog()">Create Invoice</a>
                     </div>
                 </div>
             </div>
