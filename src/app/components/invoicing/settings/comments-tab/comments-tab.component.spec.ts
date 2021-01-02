@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AddTripsInvoiceComponent } from './add-trips-invoice.component';
+import { CommentsTabComponent } from './comments-tab.component';
 
-describe('AddTripsInvoiceComponent', () => {
-  let component: AddTripsInvoiceComponent;
-  let fixture: ComponentFixture<AddTripsInvoiceComponent>;
+describe('CommentsTabComponent', () => {
+  let component: CommentsTabComponent;
+  let fixture: ComponentFixture<CommentsTabComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AddTripsInvoiceComponent ]
+      declarations: [ CommentsTabComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AddTripsInvoiceComponent);
+    fixture = TestBed.createComponent(CommentsTabComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

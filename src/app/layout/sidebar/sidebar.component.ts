@@ -9,7 +9,6 @@ export class SidebarComponent implements OnInit {
 
   items: any = [
     { icon: 'file_copy', name: 'invoices', route: '/invoicing/invoices' },
-    { icon: 'post_add', name: 'add trips invoice', route: '/invoicing/add-trips-invoice' },
     { icon: 'style', name: 'record Payment', route: '/invoicing/record-payment' },
     { icon: 'content_paste', name: 'outstanding', route: '/invoicing/outstanding' },
     { icon: 'local_atm', name: 'paid', route: '/invoicing/paid' },
