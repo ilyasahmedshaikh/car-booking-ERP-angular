@@ -12,7 +12,6 @@ export class SidebarComponent implements OnInit {
     // { icon: 'style', name: 'record Payment', route: '/invoicing/record-payment' },
     { icon: 'content_paste', name: 'outstanding', route: '/invoicing/outstanding' },
     { icon: 'local_atm', name: 'paid', route: '/invoicing/paid' },
-    { icon: 'picture_as_pdf', name: 'generate invoice', route: '/invoicing/generate-invoice' },
     { icon: 'build', name: 'settings', route: '/invoicing/settings' },
   ]
 

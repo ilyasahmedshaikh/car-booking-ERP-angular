@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaymentTermsTabComponent implements OnInit {
 
+  ELEMENT_DATA: any = [
+    {methods: '', actions: 'false'},
+  ];
+
+  displayedColumns: string[] = ['methods', 'actions'];
+  dataSource = this.ELEMENT_DATA;
+
   constructor() { }
 
   ngOnInit(): void {

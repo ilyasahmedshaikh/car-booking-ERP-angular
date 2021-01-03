@@ -1,8 +1,8 @@
-<section class="invoices">
+<section class="invoices my-5">
     <div class="container">
-        <div class="outer-invoice-fields">
-            <mat-card class="mat-elevation-z2">
-                <table mat-table [dataSource]="dataSource" class="mat-elevation-z w-100 table-striped">
+        <div class="row outer-invoice-fields">
+            <div class="col-12">
+                <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 w-100 table-striped">
                     <!--- Note that these columns can be defined in any order.
                           The actual rendered columns are set as a property on the row definition" -->
                   
@@ -37,7 +37,7 @@
                     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
                     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
                 </table>
-            </mat-card>
+            </div>
         </div>
 
         <div class="row inner-invoice-fields mt-5">
@@ -99,10 +99,6 @@
                     <tr mat-header-row *matHeaderRowDef="displayedColumns1"></tr>
                     <tr mat-row *matRowDef="let row; columns: displayedColumns1;"></tr>
                 </table>
-
-                <div class="add-trips-btn mt-3 float-right">
-                    <button class="px-5" mat-raised-button color="primary">Add Selected Trips to Invoice</button>
-                </div>
             </div>
         </div>
     </div>

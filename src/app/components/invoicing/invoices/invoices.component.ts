@@ -20,13 +20,13 @@ export class InvoicesComponent implements OnInit {
   dataSource = this.ELEMENT_DATA;
 
   ELEMENT_DATA1: any = [
-    {checkbox: false, conf: 132, pickup_date_time: '2/09/2020 10:40 PM', passenger: 'John Michael', driver: 'Joe Henz', car: 'Car', po_client_ref: '', total_dues: '7849'},
-    {checkbox: false, conf: 234, pickup_date_time: '10/05/2020 08:30 AM', passenger: 'Allexendra Sio', driver: 'Kendic Martel', car: 'Car', po_client_ref: '', total_dues: '1503'},
-    {checkbox: false, conf: 454, pickup_date_time: '15/11/2020 12:05 AM', passenger: 'Charlie', driver: 'Maxwell Dyrn', car: 'Car', po_client_ref: '', total_dues: '2695'},
-    {checkbox: false, conf: 132, pickup_date_time: '2/09/2020 10:40 PM', passenger: 'John Michael', driver: 'Joe Henz', car: 'Car', po_client_ref: '', total_dues: '7849'},
+    {conf: 132, pickup_date_time: '2/09/2020 10:40 PM', passenger: 'John Michael', driver: 'Joe Henz', car: 'Car', po_client_ref: 'Reference 1', total_dues: '7849'},
+    {conf: 234, pickup_date_time: '10/05/2020 08:30 AM', passenger: 'Allexendra Sio', driver: 'Kendic Martel', car: 'Car', po_client_ref: 'Reference 2', total_dues: '1503'},
+    {conf: 454, pickup_date_time: '15/11/2020 12:05 AM', passenger: 'Charlie', driver: 'Maxwell Dyrn', car: 'Car', po_client_ref: 'Reference 3', total_dues: '2695'},
+    {conf: 132, pickup_date_time: '2/09/2020 10:40 PM', passenger: 'John Michael', driver: 'Joe Henz', car: 'Car', po_client_ref: 'Reference 4', total_dues: '7849'},
   ];
 
-  displayedColumns1: string[] = ['checkbox', 'conf', 'pickup_date_time', 'passenger', 'driver', 'car', 'po_client_ref', 'total_dues'];
+  displayedColumns1: string[] = ['conf', 'pickup_date_time', 'passenger', 'driver', 'car', 'po_client_ref', 'total_dues'];
   dataSource1 = this.ELEMENT_DATA1;
 
   constructor() { }
