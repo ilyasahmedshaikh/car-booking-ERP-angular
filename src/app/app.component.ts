@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit{
   title = 'angular-app';
   opened: boolean = true;
-  mode: string = 'side';
+  mode: any = 'side';
 
   toggleSidenav() {
     this.opened = !this.opened;
