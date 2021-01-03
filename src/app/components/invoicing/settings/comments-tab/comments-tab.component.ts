@@ -7,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CommentsTabComponent implements OnInit {
 
+  ELEMENT_DATA: any = [
+    {comment: 'Message 1', actions: ''},
+    {comment: 'Message 2', actions: ''},
+    {comment: 'Message 3', actions: ''},
+  ];
+
+  displayedColumns: string[] = ['comment', 'actions'];
+  dataSource = this.ELEMENT_DATA;
+
   constructor() { }
 
   ngOnInit(): void {

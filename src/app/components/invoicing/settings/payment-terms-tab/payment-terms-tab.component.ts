@@ -8,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class PaymentTermsTabComponent implements OnInit {
 
   ELEMENT_DATA: any = [
-    {methods: '', actions: 'false'},
+    {method: 'Due Upon Receipt', actions: ''},
+    {method: 'Receipt Undefined', actions: ''},
   ];
 
-  displayedColumns: string[] = ['methods', 'actions'];
+  displayedColumns: string[] = ['method', 'actions'];
   dataSource = this.ELEMENT_DATA;
 
   constructor() { }
