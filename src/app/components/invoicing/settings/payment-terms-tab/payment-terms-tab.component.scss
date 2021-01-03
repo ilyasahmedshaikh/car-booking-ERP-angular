@@ -1,0 +1,9 @@
+@import '/src/styles.scss';
+
+
+@media screen and (max-width: 600px) {
+    .large-btn {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+}
