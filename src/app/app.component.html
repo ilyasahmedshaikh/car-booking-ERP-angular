@@ -2,15 +2,15 @@
 <!-- <router-outlet></router-outlet> -->
 
 <mat-toolbar color="primary">
-    <button mat-icon-button class="mr-2">
-     <mat-icon>menu</mat-icon>
+    <button mat-icon-button class="mr-2" (click)="toggleSidenav()">
+        <mat-icon>menu</mat-icon>
    </button>
    <span>My App</span>
    <span class="example-spacer"></span>
  </mat-toolbar>
  
 <mat-sidenav-container>
-    <mat-sidenav mode="side" opened>
+    <mat-sidenav [mode]="mode" [(opened)]="opened">
         <app-sidebar></app-sidebar>
     </mat-sidenav>
     
