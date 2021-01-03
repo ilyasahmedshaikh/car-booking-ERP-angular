@@ -3,13 +3,13 @@
 
         <mat-card class="my-4 mat-elevation-z2">
             <div class="row mx-0">
-                <mat-tab-group class="w-100" animationDuration="0ms">
+                <mat-tab-group class="w-100" animationDuration="0ms" [(selectedIndex)]="selectedIndex">
 
                     <mat-tab label="Create Invoices">
                         <app-create-invoices></app-create-invoices>
                     </mat-tab>
                     <mat-tab label="Outstanding Invoices">
-                        <app-outstanding-invoices></app-outstanding-invoices>
+                        <app-outstanding-invoices (tabIndex)="onTabChanged($event)"></app-outstanding-invoices>
                     </mat-tab>
                     <mat-tab label="Paid Invoices">
                         <app-paid-invoices></app-paid-invoices>

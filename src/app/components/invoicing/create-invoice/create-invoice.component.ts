@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateInvoiceComponent implements OnInit {
 
+  selectedIndex: number = 0;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onTabChanged(event: any) {
+    this.selectedIndex = event;
   }
 
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-outstanding-invoices',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./outstanding-invoices.component.scss']
 })
 export class OutstandingInvoicesComponent implements OnInit {
+
+  @Output() tabIndex = new EventEmitter<any>();
 
   ELEMENT_DATA: any = [
     {invoice: 132, billing_contact: 'Doug Pederson', company: 'Eagles Corporation', bill_date: '2/09/2020', due_date: '2/09/2020', status: '15 days overdue', total: '450', outstanding: '100', actions: ''},
@@ -21,6 +23,10 @@ export class OutstandingInvoicesComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  changeTabIndex(value: number) {
+    this.tabIndex.emit(value);
   }
 
 }
