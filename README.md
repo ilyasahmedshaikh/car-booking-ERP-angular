@@ -1,4 +1,5 @@
-# angular-app
+# ERP built with Angular (Car booking Inspired by Uber & Lyft)
+
 app
 > https://ilyasahmedshaikh.github.io/angular-app/
 
