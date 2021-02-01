@@ -12,4 +12,16 @@
         <mat-divider></mat-divider>
     </mat-selection-list>
 
+    <mat-selection-list [multiple]="false">
+        <div mat-subheader>Driver Pay</div>
+
+        <mat-list-option *ngFor="let item of driverItems" [routerLink]="item.route">
+            <mat-icon mat-list-icon color="primary">{{item.icon}}</mat-icon>
+            <div mat-line class="text-capitalize">
+                <small>{{item.name}}</small>
+            </div>
+        </mat-list-option>
+        <mat-divider></mat-divider>
+    </mat-selection-list>
+
 </div>

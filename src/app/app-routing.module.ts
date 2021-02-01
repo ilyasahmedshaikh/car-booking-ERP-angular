@@ -9,6 +9,10 @@ const routes: Routes = [
   {
     path: 'invoicing',
     loadChildren: () => import('./components/invoicing/invoicing.module').then(m => m.InvoicingModule)
+  },
+  {
+    path: 'driver-pay',
+    loadChildren: () => import('./components/driver-pay/driver-pay.module').then(m => m.DriverPayModule)
   }
 ];
 
