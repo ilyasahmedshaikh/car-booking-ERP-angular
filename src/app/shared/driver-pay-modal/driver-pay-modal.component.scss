@@ -1,0 +1,40 @@
+@import '/src/styles.scss';
+
+.popup{
+    .top-head {
+        h4 {
+            color: black;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 0px;
+        }
+    }
+
+    .rates {
+        .left {
+            p {
+                color: black;
+                font-size: 13px;
+                margin-bottom: 0px;
+                span {
+                    float: right;
+                    color: black;
+                    font-size: 13px;
+                }
+            }
+            
+        }
+    }
+    .total{
+        h5{
+            
+        }
+        span{
+            color: #5e0b03;
+            font-size: 13px;
+            font-weight: bold;
+        }
+    }
+
+
+}

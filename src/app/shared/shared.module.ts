@@ -21,9 +21,10 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatTreeModule } from '@angular/material/tree';
 import { MatDialogModule } from '@angular/material/dialog';
 import { InvoiceModalComponent } from './invoice-modal/invoice-modal.component';
+import { DriverPayModalComponent } from './driver-pay-modal/driver-pay-modal.component';
 
 @NgModule({
-  declarations: [InvoiceModalComponent],
+  declarations: [InvoiceModalComponent, DriverPayModalComponent],
   imports: [
     CommonModule,
     FormsModule,
