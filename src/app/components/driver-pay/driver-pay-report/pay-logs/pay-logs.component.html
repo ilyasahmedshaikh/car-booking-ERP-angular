@@ -38,17 +38,15 @@
                     <th mat-header-cell *matHeaderCellDef>Show it on driver app</th>
                     <td class="text-truncate" mat-cell *matCellDef="let element">{{element.show_it_on_driver_app}}</td>
                 </ng-container>
-                
-                <!-- Total Column -->
-                <ng-container matColumnDef="download">
-                    <th mat-header-cell *matHeaderCellDef></th>
-                    <td class="text-truncate" mat-cell *matCellDef="let element"><a href="#">{{element.download}}</a></td>
-                </ng-container>
 
                 <!-- btns Column -->
                 <ng-container matColumnDef="actions">
                     <th mat-header-cell *matHeaderCellDef></th>
                     <td class="actions text-right" mat-cell *matCellDef="let element">
+                        <button class="mr-3" mat-icon-button color="primary" aria-label="Example icon button with a download icon">
+                            <mat-icon>file_download</mat-icon>
+                        </button>
+
                         <button mat-icon-button color="warn" aria-label="Example icon button with a delete icon">
                             <mat-icon>delete</mat-icon>
                         </button>
