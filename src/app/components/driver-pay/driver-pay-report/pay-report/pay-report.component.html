@@ -30,7 +30,7 @@
         </div>
 
         <div class="row mt-4">
-            <button mat-raised-button color="primary" (click)="openDialog()">Primary</button>
+            <button mat-raised-button color="primary" (click)="openDialog()">Driver Pay</button>
         </div>
 
         <div class="row list-section mt-3">   
@@ -81,16 +81,15 @@
                 <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
             </table>
         </div>
-
-        <mat-card class="my-4 mat-elevation-z3">
-            <div class="row m-0">
-                <div class="total-bar">
-                    <p>
-                        Total Net Pay:
-                        <span>$ 689</span>
-                    </p>
-                </div>
-            </div>
-        </mat-card>
     </div>
+
+    <mat-card class="my-4 mat-elevation-z3">
+        <div class="row m-0">
+            <p class="w-100 text-right">
+                Total Net Pay:
+                <strong>$689</strong>
+            </p>
+        </div>
+    </mat-card>
+    <button mat-raised-button color="primary" class="float-right">Save</button>
 </div>
