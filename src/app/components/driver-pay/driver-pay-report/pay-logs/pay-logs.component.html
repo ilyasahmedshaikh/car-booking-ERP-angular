@@ -36,8 +36,9 @@
                 <!-- Show It On Driver App Column -->
                 <ng-container matColumnDef="show_it_on_driver_app">
                     <th mat-header-cell *matHeaderCellDef>Show it on driver app</th>
-                    <td class="text-truncate" mat-cell *matCellDef="let element">{{element.show_it_on_driver_app}}</td>
-                    <mat-checkbox class="example-margin" >Checked</mat-checkbox>
+                    <td class="text-truncate" mat-cell *matCellDef="let element">
+                        <mat-checkbox class="example-margin pl-5 pt-2"></mat-checkbox>
+                    </td>
                 </ng-container>
 
                 <!-- btns Column -->

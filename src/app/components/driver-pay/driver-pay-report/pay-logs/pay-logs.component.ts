@@ -14,7 +14,7 @@ export class PayLogsComponent implements OnInit {
 
   
   ELEMENT_DATA: any = [
-    {pay_peroid: '19/9/2020 - 25/2/2021', driver_name: 'Ali Al-Abas', net_pay: 'total $', generated_on: 'date', by: 'admin name', show_it_on_driver_app: '', actions: ''},
+    {pay_peroid: '19/9/2020 - 25/2/2021', driver_name: 'Ali Al-Abas', net_pay: 'Total $', generated_on: 'Date', by: 'Admin Name', show_it_on_driver_app: '', actions: ''},
   
   ];
 
