@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { DriverPayModalComponent } from '../../../../../app/shared/driver-pay-modal/driver-pay-modal.component';
+
 
 @Component({
   selector: 'app-pay-report',
@@ -19,9 +22,19 @@ export class PayReportComponent implements OnInit {
   displayedColumns: string[] = ['date', 'rese', 'passenger_name', 'payment_method', 'base_fee', 'other_fee_list', 'total'];
   dataSource = this.ELEMENT_DATA;
 
-  constructor() { }
+  constructor(
+    private dialog: MatDialog
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  openDialog() {
+    const dialogRef = this.dialog.open( DriverPayModalComponent );
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
 
 }
