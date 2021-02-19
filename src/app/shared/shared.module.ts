@@ -22,9 +22,11 @@ import { MatTreeModule } from '@angular/material/tree';
 import { MatDialogModule } from '@angular/material/dialog';
 import { InvoiceModalComponent } from './invoice-modal/invoice-modal.component';
 import { DriverPayModalComponent } from './driver-pay-modal/driver-pay-modal.component';
+import { AddRateModalComponent } from './add-rate-modal/add-rate-modal.component';
+import { AddRateOptionModalComponent } from './add-rate-option-modal/add-rate-option-modal.component';
 
 @NgModule({
-  declarations: [InvoiceModalComponent, DriverPayModalComponent],
+  declarations: [InvoiceModalComponent, DriverPayModalComponent, AddRateModalComponent, AddRateOptionModalComponent],
   imports: [
     CommonModule,
     FormsModule,

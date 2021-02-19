@@ -81,15 +81,19 @@
                 <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
             </table>
         </div>
-    </div>
 
-    <mat-card class="my-4 mat-elevation-z3">
-        <div class="row m-0">
-            <p class="w-100 text-right">
-                Total Net Pay:
-                <strong>$689</strong>
-            </p>
+        <div class="row total-net mt-5 mx-0">
+            <div class="col-12 text-right">
+                <div class="total">
+                    <p>
+                        Total Net Pay:
+                        <span>$689</span>
+                    </p>
+                </div>
+                <div class="save-btn mt-4">
+                    <button mat-raised-button color="primary" class="px-5">Save</button>
+                </div>
+            </div>
         </div>
-    </mat-card>
-    <button mat-raised-button color="primary" class="float-right">Save</button>
+    </div>
 </div>

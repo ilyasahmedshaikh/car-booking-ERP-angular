@@ -1,0 +1,108 @@
+<div class="add-rate-modal">
+    <div class="row mx-0 heading">
+        <h4>Add a new rate</h4>
+    </div>
+
+    <div class="row inputs mt-4">
+        <div class="col-12">
+            <mat-form-field class="example-full-width w-100">
+                <mat-label>Rate Name</mat-label>
+                <input matInput placeholder="Rate Name">
+            </mat-form-field>
+        </div>
+        <div class="col-md-6 col-12">
+            <mat-form-field class="example-full-width w-100">
+                <mat-label>Vehicle Class</mat-label>
+                <mat-select>
+                    <mat-option value="option1">Vehicle 1</mat-option>
+                    <mat-option value="option2">Vehicle 2</mat-option>
+                    <mat-option value="option3">Vehicle 3</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-md-6 col-12">
+            <mat-form-field class="example-full-width w-100">
+                <mat-label>Select Driver</mat-label>
+                <mat-select>
+                    <mat-option value="option1">Driver 1</mat-option>
+                    <mat-option value="option2">Driver 2</mat-option>
+                    <mat-option value="option3">Driver 3</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="row mt-3 mx-0 or">
+        <p>OR</p>
+    </div>
+
+    <div class="row dropdowns mt-2">
+        <div class="col-md-6">
+            <mat-form-field class="example-full-width w-100">
+                <mat-label>Percentage</mat-label>
+                <mat-select>
+                    <mat-option value="option1">Percentage 1</mat-option>
+                    <mat-option value="option2">Percentage 2</mat-option>
+                    <mat-option value="option3">Percentage 3</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="col-md-6">
+            <mat-form-field class="example-full-width w-100">
+                <mat-label>Flat Rate</mat-label>
+                <mat-select>
+                    <mat-option value="option1">Flat Rate 1</mat-option>
+                    <mat-option value="option2">Flat Rate 2</mat-option>
+                    <mat-option value="option3">Flat Rate 3</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="row dropdowns">
+        <div class="col-md-6">
+            <mat-form-field class="example-full-width w-100">
+                <mat-label>Hourly Rate</mat-label>
+                <mat-select>
+                    <mat-option value="option1">Hourly Rate 1</mat-option>
+                    <mat-option value="option2">Hourly Rate 2</mat-option>
+                    <mat-option value="option3">Hourly Rate 3</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="col-md-6">
+            <mat-form-field class="example-full-width w-100">
+                <mat-label>Minimum Hours</mat-label>
+                <mat-select>
+                    <mat-option value="option1">Minimum Hours 1</mat-option>
+                    <mat-option value="option2">Minimum Hours 2</mat-option>
+                    <mat-option value="option3">Minimum Hours 3</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row rate-option-dropdown">
+        <div class="col-12">
+            <mat-form-field class="example-full-width w-100">
+                <mat-label>Rate Options</mat-label>
+                <mat-select>
+                    <mat-option value="option1">Rate Option 1</mat-option>
+                    <mat-option value="option2">Rate Option 2</mat-option>
+                    <mat-option value="option3">Rate Option 3</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <button class="px-5" mat-raised-button color="primary" (click)="openDialog()">Add Rate Option</button>
+        </div>
+    </div>
+
+    <div class="row float-right mt-4 mx-0">
+        <button class="px-5 mr-2" mat-raised-button color="warn">Cancel</button>
+        <button class="px-5" mat-raised-button color="primary">Add</button>
+    </div>
+</div>

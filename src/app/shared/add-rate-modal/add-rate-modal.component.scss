@@ -1,0 +1,42 @@
+@import '/src/styles.scss';
+
+.add-rate-modal {
+    .heading {
+        h4 {
+            margin-bottom: 0px;
+            font-size: 22px;
+            font-weight: 500;
+            color: black;
+        }
+    }
+
+    .or {
+        position: relative;
+        p {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 0px;
+            font-size: 16px;
+            color: #9b9b9b;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 46%;
+                height: 1px;
+                left: 0;
+                top: 10px;
+                background-color: rgb(0 0 0 / 10%);
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                width: 46%;
+                height: 1px;
+                right: 0;
+                top: 10px;
+                background-color: rgb(0 0 0 / 10%);
+            }
+        }
+    }
+}

@@ -1,1 +1,46 @@
-<p>driver-pay-settings works!</p>
+<section class="driver-pay-settings">
+    <div class="container">
+        <mat-card class="my-4 mat-elevation-z2">
+            <div class="row mx-0">
+                <button class="px-5" mat-raised-button color="primary" (click)="openDialog()">Add Rate</button>
+            </div>
+        </mat-card>
+
+        <div class="row mx-0">
+            <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 w-100 table-striped">
+                <!-- Rate Name Column -->
+                <ng-container matColumnDef="rate_name">
+                  <th mat-header-cell *matHeaderCellDef>Rate Name</th>
+                  <td class="text-truncate"  mat-cell *matCellDef="let element">{{element.rate_name}}</td>
+                </ng-container>
+              
+                <!-- Driver Name Column -->
+                <ng-container matColumnDef="driver_name">
+                  <th mat-header-cell *matHeaderCellDef>Driver Name</th>
+                  <td class="text-truncate" mat-cell *matCellDef="let element">{{element.driver_name}}</td>
+                </ng-container>
+              
+                <!-- Vehicle Column -->
+                <ng-container matColumnDef="vehicle">
+                  <th mat-header-cell *matHeaderCellDef>Vehicle</th>
+                  <td class="text-truncate" mat-cell *matCellDef="let element">{{element.vehicle}}</td>
+                </ng-container>
+              
+                <!-- Rate Column -->
+                <ng-container matColumnDef="rate">
+                  <th mat-header-cell *matHeaderCellDef>Rate</th>
+                  <td mat-cell *matCellDef="let element">{{element.rate}}</td>
+                </ng-container>
+    
+                <!-- Option Column -->
+                <ng-container matColumnDef="option">
+                    <th mat-header-cell *matHeaderCellDef>Option</th>
+                    <td mat-cell *matCellDef="let element">{{element.option}}</td>
+                </ng-container>
+                
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+        </div>
+    </div>
+</section>

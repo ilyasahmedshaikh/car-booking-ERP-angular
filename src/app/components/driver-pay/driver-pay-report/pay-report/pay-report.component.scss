@@ -13,4 +13,21 @@
             }
         }
     }
+
+    .total-net {
+        .total {
+            p {
+                margin-bottom: 0px;
+                font-size: 16px;
+                font-weight: 500;
+                color: black;
+                span {
+                    color: red;
+                    font-weight: 600;
+                    padding-left: 11px;
+                    font-size: 26px;
+                }
+            }
+        }
+    }
 }
