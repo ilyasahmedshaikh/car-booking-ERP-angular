@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { DriverPayModalComponent } from '../../../../app/shared/driver-pay-modal/driver-pay-modal.component';
 
 @Component({
   selector: 'app-affiliate-pay-report',
@@ -7,9 +9,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AffiliatePayReportComponent implements OnInit {
 
-  constructor() { }
+  ELEMENT_DATA: any = [
+    {date: '19/9/2020', rese: '85602', passenger_name: 'John Smith', payment_method: 'Credit Card', base_fee: '', other_fee_list: '', total: ''},
+    {date: '25/2/2020', rese: '96602', passenger_name: 'Michael Noah', payment_method: 'On Account', base_fee: '', other_fee_list: '', total: ''},
+    {date: '13/5/2020', rese: '12602', passenger_name: 'Alexendra', payment_method: 'Credit Card', base_fee: '', other_fee_list: '', total: ''},
+    {date: '09/3/2020', rese: '36602', passenger_name: 'Edwin Liam', payment_method: 'On Account', base_fee: '', other_fee_list: '', total: ''},
+    {date: '30/7/2020', rese: '79602', passenger_name: 'Lucas Milano', payment_method: 'Credit Card', base_fee: '', other_fee_list: '', total: ''},
+    
+  ];
+
+  displayedColumns: string[] = ['date', 'rese', 'passenger_name', 'payment_method', 'base_fee', 'other_fee_list', 'total'];
+  dataSource = this.ELEMENT_DATA;
+
+  constructor(
+    private dialog: MatDialog
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  openDialog() {
+    const dialogRef = this.dialog.open( DriverPayModalComponent );
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
 
 }
